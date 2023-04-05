@@ -1,6 +1,5 @@
 const contacts = require('@root/models/contacts');
-const HttpError = require('@root/helpers/HttpError');
-const {ctrlWrapper} = require("../helpers");
+const {HttpError, ctrlWrapper} = require('@root/helpers');
 
 const getAll = async (req, res) => {
 	const result = await contacts.listContacts();
@@ -12,18 +11,8 @@ const getById = async (req, res) => {
 	const result = await contacts.getContactById(id);
 	if(!result) {
 		throw HttpError(404, "Not Found");
-		// const error = new Error("Not found");
-		// error.status = 404;
-		// throw error;
-		// return res.status(404).json({
-		//   message: "Not found"
-		// })
 	}
 	res.json(result);
-	// const {status = 500, message = "Server error"} = error;
-	// res.status(status).json({
-	//   message,
-	// })
 };
 
 const add = async (req, res) => {
