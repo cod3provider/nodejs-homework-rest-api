@@ -11,7 +11,7 @@ const {
 
 const {validateBody, isValidId} = require('@root/middlewares');
 
-const {schemas} = require('@root/models/');
+const {schemas} = require('@root/models');
 
 const router = express.Router();
 
