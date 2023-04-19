@@ -1,4 +1,4 @@
-const {ctrlWrapper} = require('../../helpers');
+const {ctrlWrapper} = require('@root/helpers');
 
 const getAll = require('./getAll');
 const getById = require('./getById');

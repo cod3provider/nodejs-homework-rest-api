@@ -5,5 +5,5 @@ module.exports = {
 	Contact,
 	contactSchemas,
 	User,
-	userSchemas
+	userSchemas,
 }

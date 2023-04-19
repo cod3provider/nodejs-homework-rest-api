@@ -1,4 +1,4 @@
-const {Contact} = require('../../models');
+const {Contact} = require('@root/models');
 
 const add = async (req, res) => {
 	const {_id: owner} = req.user;

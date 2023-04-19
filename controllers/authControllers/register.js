@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs');
 
 const {HttpError} = require('@root/helpers');
 
-const {User} = require('@root/models/user');
+const {User} = require('@root/models');
 
 const register = async (req, res) => {
 	const {email, password} = req.body;

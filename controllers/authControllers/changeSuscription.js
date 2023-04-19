@@ -1,6 +1,6 @@
-const {HttpError} = require('../../helpers');
+const {HttpError} = require('@root/helpers');
 
-const {User} = require('../../models');
+const {User} = require('@root/models');
 
 const changeSubscription = async (req, res) => {
 	const {id} = req.params;
