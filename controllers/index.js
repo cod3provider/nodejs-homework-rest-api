@@ -1,19 +1,19 @@
 const {
-	getAll,
-	getById,
-	add,
-	removeById,
-	updateById,
-	updateFavouriteById,
-} = require('./contactsControllers');
+	      getAll,
+	      getById,
+	      add,
+	      removeById,
+	      updateById,
+	      updateFavouriteById,
+      } = require('./contactsControllers');
 
 const {
-	register,
-	login,
-	getCurrent,
-	logout,
-	changeSubscription,
-} = require('./authControllers');
+	      register,
+	      login,
+	      getCurrent,
+	      logout,
+	      changeSubscription,
+      } = require('./authControllers');
 
 module.exports = {
 	getAll,
