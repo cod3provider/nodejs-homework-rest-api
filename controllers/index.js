@@ -8,12 +8,13 @@ const {
       } = require('./contactsControllers');
 
 const {
-	      register,
-	      login,
-	      getCurrent,
-	      logout,
-	      changeSubscription,
-      } = require('./authControllers');
+	register,
+	login,
+	getCurrent,
+	logout,
+	changeSubscription,
+	updateAvatar
+} = require('./authControllers');
 
 module.exports = {
 	getAll,
@@ -27,4 +28,5 @@ module.exports = {
 	getCurrent,
 	logout,
 	changeSubscription,
+	updateAvatar,
 }
